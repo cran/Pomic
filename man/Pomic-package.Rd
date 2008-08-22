@@ -12,8 +12,8 @@ This package propose calculations of a non-parsimonious based information criter
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 0.9.0\cr
-Date: \tab 2008-30-05\cr
+Version: \tab 0.9.1\cr
+Date: \tab 2008-22-08\cr
 License: \tab GPL-2\cr
 }
 The \link{pomic} function is for distribution patterns.
@@ -34,7 +34,7 @@ The \link{summarize.parameters} function is for parameter averaging from weights
 \author{
 Cyril Piou
 \cr
-\email{cyril.piou@forst.tu-dresden.de}
+\email{cyril.piou@yahoo.fr}
 }
 \references{
 Piou 2007, Patterns and individual-based modeling of spatial competition within two main components of Neotropical mangrove ecosystems. PhD thesis, University of Bremen. \url{http://elib.suub.uni-bremen.de/diss/docs/00010671.pdf} 

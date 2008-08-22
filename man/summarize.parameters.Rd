@@ -22,7 +22,7 @@ Return a data set of best parameter values, averaged parameter values and standa
 
 \author{ Cyril Piou
 \cr
-\email{cyril.piou@forst.tu-dresden.de}
+\email{cyril.piou@yahoo.fr}
 }
 
 \seealso{\code{\link{analyse.pomics}} \code{\link{pomic}}}

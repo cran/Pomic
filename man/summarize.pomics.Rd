@@ -22,7 +22,7 @@ Return a data frame containing:
 
 \author{ Cyril Piou 
 \cr
-\email{cyril.piou@forst.tu-dresden.de}
+\email{cyril.piou@yahoo.fr}
 }
 
 \seealso{\code{\link{summarize.parameters}} \code{\link{analyse.pomics}} \code{\link{pomic}} }

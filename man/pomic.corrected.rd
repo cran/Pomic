@@ -23,7 +23,7 @@ Return a value corresponding to the pomic score of model results to reproduce th
 
 \author{ Cyril Piou 
 \cr
-\email{cyril.piou@forst.tu-dresden.de}
+\email{cyril.piou@yahoo.fr}
 }
 
 \seealso{\code{\link{pomic.simple}} \code{\link{pomic}}}
