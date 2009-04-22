@@ -1,4 +1,4 @@
-`pomic.corrected` <-
+`pomdev.corrected` <-
 function(object1,object2,eps=10^-30,nrange=1000)
 {
   r1<-range(object1,na.rm=TRUE)

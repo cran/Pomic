@@ -1,0 +1,12 @@
+Pomic-package           Pattern Oriented Modeling Information Criterion
+                        for ABM/IBM
+pomdev                  POMDEV calculation for numerical patterns
+pomdev.corrected        POMDEV corrected calculation for numerical
+                        patterns
+pomdev.extra            POMDEV calculation for numerical patterns 
+                        as well as other goodness of fit indicators
+demoPomic               Run POMDEV, metropolis sampling and POMIC calculations,
+                        as found in Appendix 2 of Piou et al. (submitted)
+verification            Verify with identical examples, check the POMIC scores
+                        found in the previous demo with the DIC scores 
+                        from that one

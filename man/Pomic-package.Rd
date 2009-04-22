@@ -6,29 +6,21 @@
 Pattern Oriented Modeling Information Criterion for ABM/IBM
 }
 \description{
-This package propose calculations of a non-parsimonious based information criterion to check the quality of simulations results of ABM/IBM or other non-linear rule-based models. The POMIC is based on the KL divergence and likelihood theory. These methods are still under development and further work are needed for the incorporation of model complexity measurement in the information criterion.
+This package propose calculations of an information criterion to check the quality of simulations results of ABM/IBM or other non-linear rule-based models. The POMDEV measure is based on the KL divergence and likelihood theory. It basically indicates the deviance of simulation results from field observations. Once POMDEV scores and metropolis-hasting sampling on different model versions are effectuated, POMIC scores can be calculated. This method is still under development and further work are needed for the incorporation of multiple patterns assessment.
 }
 \details{
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 0.9.1\cr
-Date: \tab 2008-22-08\cr
+Version: \tab 0.9.2\cr
+Date: \tab 2009-22-04\cr
 License: \tab GPL-2\cr
 }
-The \link{pomic} function is for distribution patterns.
+The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.
 
-The \link{pomic.timeseries} is for autocorrelated patterns.
+The \link{pomdev.extra} function is to obtain POMDEV scores as well as other goodness of fit indicators.
 
-The \link{pomic.simple} function is to obtain only the POMIC value.
-
-The \link{pomic.corrected} function is to obtain raw approximation of KL divergence for multiple patterns means.
-
-The \link{analyse.pomics} function is for secondary analysis of pomic results (weights of evidence and parameter averaging).
-
-The \link{summarize.pomics} function is for weights of evidence calculation from pomic results.
-
-The \link{summarize.parameters} function is for parameter averaging from weights of evidence.
+The \link{pomdev.corrected} function is to obtain raw approximation of KL divergence.
 
 }
 \author{
@@ -39,14 +31,14 @@ Cyril Piou
 \references{
 Piou 2007, Patterns and individual-based modeling of spatial competition within two main components of Neotropical mangrove ecosystems. PhD thesis, University of Bremen. \url{http://elib.suub.uni-bremen.de/diss/docs/00010671.pdf} 
 
-Piou et al. Proposing an information criterion for individual-based models developed in a pattern-oriented modeling framework. In preparation.
+Piou et al. Proposing an information criterion for individual-based models developed in a pattern-oriented modelling framework. Submitted.
 }
 
 \keyword{ misc }
 \keyword{ utilities }
 \keyword{ programming }
 
-\seealso{\code{\link{pomic}} \code{\link{analyse.pomics}} \code{\link{pomic.simple}} \code{\link{pomic.corrected}} \code{\link{pomic.timeseries}} }
+\seealso{\code{\link{pomdev}} \code{\link{pomdev.extra}} \code{\link{pomdev.corrected}} }
 
 \examples{
 #example of field pattern distribution:        
@@ -54,27 +46,26 @@ fieldpattern<-rnorm(100,10,5)
 #model results:
 model1runs<- rnorm(100*5,10.5,6)
 model2runs<- rnorm(100*5,9.5,2)
-#POMIC measurements:
-pomic(fieldpattern,model1runs,eps=10^-20,plotting=TRUE)
-pomic(fieldpattern,model2runs,eps=10^-20,plotting=TRUE)
-pomic.simple(fieldpattern,model2runs,eps=10^-20)
-pomic.corrected(fieldpattern,model1runs,eps=10^-20)
-pomic.corrected(fieldpattern,model2runs,eps=10^-20)
+#POMDEV measurements:
+pomdev.extra(fieldpattern,model1runs,eps=10^-20,plotting=TRUE)
+pomdev.extra(fieldpattern,model2runs,eps=10^-20,plotting=TRUE)
+pomdev(fieldpattern,model2runs,eps=10^-20)
+pomdev.corrected(fieldpattern,model1runs,eps=10^-20)
+pomdev.corrected(fieldpattern,model2runs,eps=10^-20)
 
-#An analysis with random POMIC scores:
-dataset<-data.frame(P1=rep(1:5,each=5),P2=rep(seq(0,5,length=5),5),
-                    pomics=runif(25)*20)
-analyse.pomics(dataset,c(1,2),3)
+#other examples of POMDEV measures:
+pomdev(x<-rnorm(100),y<-rnorm(100,0.1)) #POMDEV value for a model creating a normal distribution with identical variance as the field data but a mean 0.1 away from the field data
+par(mfrow=c(2,2))
+hist(x,freq=FALSE) #plot the field data as histogram
+lines(density(y))#check the simulation results distribution as line
+pomdev(x<-rnorm(100),y<-rnorm(100,0.2)) #idem 0.2 away from the field data
+hist(x,freq=FALSE); lines(density(y)) #plot
+pomdev(x<-rnorm(100),y<-rnorm(100,1))   #idem 1 away from the field data
+hist(x,freq=FALSE); lines(density(y)) #plot
+pomdev(x<-rnorm(100),y<-rnorm(100,3))   #idem 3 away from the field data
+hist(x,freq=FALSE); lines(density(y)) #plot
 
-#example for time series patterns:
-timeserie<-runif(100)+1:100-(seq(1,10,length=100)^2)
-model<-NULL
-for(i in 1:100){  
-  model<-cbind(model,runif(100)+1:100-(seq(1,10,length=100)^2.01)) 
-}
-pomic.timeseries(timeserie,model,eps=10^-20,fullmsd=TRUE,
-                  plotting=TRUE,half_window_size=10,
-                  check_whole=TRUE,check_diffs=TRUE)
-
+\dontrun{demo(demoPomic)}
+\dontrun{demo(verification)}
 
 }
