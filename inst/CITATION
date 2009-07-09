@@ -6,12 +6,12 @@ citEntry(entry="Article",
 			person(first="Uta", last="Berger"),
 			person(first="Volker", last="Grimm")),
          journal = "Ecological modelling",
-         year = "Submitted",
-         volume = "",
-         number = "",
-         url = "",
+         year = "2009",
+         volume = "220",
+         number = "1957-1967",
+         url = "http://dx.doi.org/10.1016/j.ecolmodel.2009.05.003",
          
-         textVersion = paste("Cyril Piou,","Uta Berger","and Volker Grimm.","Proposing an information criterion","for individual-based models","developed in a pattern-oriented","modelling framework.","Submitted to Ecological Modelling")
+         textVersion = paste("Cyril Piou,","Uta Berger","and Volker Grimm.","Proposing an information criterion","for individual-based models","developed in a pattern-oriented","modelling framework.","Ecological Modelling","220: 1957-1967")
          )
 
 

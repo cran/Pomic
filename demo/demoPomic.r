@@ -1,8 +1,8 @@
 ############################################################
 ##                                                        ##
 ##   Demo of POMDEV, metropolis sampling                  ##
-##       and POMIC calculations, as found in Appendix 2   ##
-##       of Piou et al. (submitted)                       ##
+##       and POMIC calculations, as found in Appendix B   ##
+##       of Piou et al. (2009)			                      ##
 ##                                                        ##
 ############################################################
 require(Pomic)

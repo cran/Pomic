@@ -1,7 +1,13 @@
 `pomdev` <-
 function(object1,object2,eps=10^-30,nrange=1000)
 {
-  r1<-range(object1,na.rm=TRUE)
+	if(!is.numeric(object1)|!is.numeric(object2))
+        stop("objects must be numeric ")
+ 
+  if(any(!is.finite(object1))|any(!is.finite(object2)))
+        stop("objects must have finite values ")
+        
+  r1<-range(object1)
 	r<-extendrange(r1,f=0.01)
 	bw1<-bw.nrd0(object1)
 

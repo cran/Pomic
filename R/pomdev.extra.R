@@ -2,8 +2,11 @@
 function(object1, object2, eps=10^-30, nrange=1000, 
 		fullmsd=FALSE,  plotting=FALSE,...) 
 {
-	if(!is.numeric(object1)|!is.numeric(object2))  
-	stop("objects must be numeric ") 
+	if(!is.numeric(object1)|!is.numeric(object2))
+        stop("objects must be numeric ")
+ 
+  if(any(!is.finite(object1))|any(!is.finite(object2)))
+        stop("objects must have finite values ")
  	
 	r1<-range(object1,na.rm=TRUE)
 	r<-extendrange(r1,f=0.01)

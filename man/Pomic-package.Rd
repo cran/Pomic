@@ -12,15 +12,21 @@ This package propose calculations of an information criterion to check the quali
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 0.9.2\cr
-Date: \tab 2009-22-04\cr
+Version: \tab 1.0.1\cr
+Date: \tab 2009-07-09\cr
 License: \tab GPL-2\cr
 }
-The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.
+The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. (2009) It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.
 
 The \link{pomdev.extra} function is to obtain POMDEV scores as well as other goodness of fit indicators.
 
 The \link{pomdev.corrected} function is to obtain raw approximation of KL divergence.
+
+The \link{pomdev.ts} function is for time series patterns. It is still under evaluation.
+
+Type \code{demo(demoPomic)} for a demonstration of POMIC calculation as in appendix B of Piou et al. (2009).
+
+And type \code{demo{verification}} for the verification of the first demonstration (as in appendix C of  Piou et al. (2009)).
 
 }
 \author{
@@ -31,14 +37,14 @@ Cyril Piou
 \references{
 Piou 2007, Patterns and individual-based modeling of spatial competition within two main components of Neotropical mangrove ecosystems. PhD thesis, University of Bremen. \url{http://elib.suub.uni-bremen.de/diss/docs/00010671.pdf} 
 
-Piou et al. Proposing an information criterion for individual-based models developed in a pattern-oriented modelling framework. Submitted.
+Piou, C., U. Berger, and V. Grimm. 2009. Proposing an information criterion for individual-based models developed in a pattern-oriented modelling framework. Ecological Modelling 220:1957-1967. \url{http://dx.doi.org/10.1016/j.ecolmodel.2009.05.003}
 }
 
 \keyword{ misc }
 \keyword{ utilities }
 \keyword{ programming }
 
-\seealso{\code{\link{pomdev}} \code{\link{pomdev.extra}} \code{\link{pomdev.corrected}} }
+\seealso{\code{\link{pomdev}} \code{\link{pomdev.ts}} \code{\link{pomdev.extra}} \code{\link{pomdev.corrected}} }
 
 \examples{
 #example of field pattern distribution:        
