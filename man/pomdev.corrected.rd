@@ -23,7 +23,7 @@ Return a value corresponding to the KL divergence between the model results and 
 
 \author{ Cyril Piou 
 \cr
-\email{cyril.piou@yahoo.fr}
+\email{piou.cyril@yahoo.fr}
 }
 
 \seealso{\code{\link{pomdev.extra}} \code{\link{pomdev}}}

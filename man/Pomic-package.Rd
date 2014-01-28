@@ -12,8 +12,8 @@ This package propose calculations of an information criterion to check the quali
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 1.0.1\cr
-Date: \tab 2009-07-09\cr
+Version: \tab 1.0.2\cr
+Date: \tab 2014-01-28\cr
 License: \tab GPL-2\cr
 }
 The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. (2009) It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.
@@ -32,7 +32,7 @@ And type \code{demo{verification}} for the verification of the first demonstrati
 \author{
 Cyril Piou
 \cr
-\email{cyril.piou@yahoo.fr}
+\email{piou.cyril@yahoo.fr}
 }
 \references{
 Piou 2007, Patterns and individual-based modeling of spatial competition within two main components of Neotropical mangrove ecosystems. PhD thesis, University of Bremen. \url{http://elib.suub.uni-bremen.de/diss/docs/00010671.pdf} 
@@ -60,7 +60,10 @@ pomdev.corrected(fieldpattern,model1runs,eps=10^-20)
 pomdev.corrected(fieldpattern,model2runs,eps=10^-20)
 
 #other examples of POMDEV measures:
-pomdev(x<-rnorm(100),y<-rnorm(100,0.1)) #POMDEV value for a model creating a normal distribution with identical variance as the field data but a mean 0.1 away from the field data
+pomdev(x<-rnorm(100),y<-rnorm(100,0.1)) 
+#POMDEV value for a model creating a normal distribution 
+#with identical variance as the field data but a mean 0.1 
+#away from the field data
 par(mfrow=c(2,2))
 hist(x,freq=FALSE) #plot the field data as histogram
 lines(density(y))#check the simulation results distribution as line

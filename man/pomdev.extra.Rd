@@ -5,7 +5,8 @@
   This function calculate the POMDEV value of simulations results compared to a vector taken as a field pattern and compute also other goodness of fit indicators.
 }
 \usage{
-pomdev.extra(object1, object2, eps=10^-30, nrange=1000, fullmsd=FALSE,  plotting=FALSE,...)
+pomdev.extra(object1, object2, eps=10^-30, nrange=1000, 
+              fullmsd=FALSE,  plotting=FALSE,...)
 }
 \arguments{
 \item{object1}{ Numerical, vector of the field pattern }
@@ -35,7 +36,7 @@ Return a list containing:
 
 \author{ Cyril Piou 
 \cr
-\email{cyril.piou@yahoo.fr}
+\email{piou.cyril@yahoo.fr}
 }
 
 \seealso{\code{\link{pomdev}} \code{\link{pomdev.corrected}}}
