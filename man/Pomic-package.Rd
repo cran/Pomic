@@ -6,14 +6,14 @@
 Pattern Oriented Modeling Information Criterion for ABM/IBM
 }
 \description{
-This package propose calculations of an information criterion to check the quality of simulations results of ABM/IBM or other non-linear rule-based models. The POMDEV measure is based on the KL divergence and likelihood theory. It basically indicates the deviance of simulation results from field observations. Once POMDEV scores and metropolis-hasting sampling on different model versions are effectuated, POMIC scores can be calculated. This method is still under development and further work are needed for the incorporation of multiple patterns assessment.
+Calculations of an information criterion are proposed to check the quality of simulations results of ABM/IBM or other non-linear rule-based models. The POMDEV measure is based on the KL divergence and likelihood theory. It basically indicates the deviance of simulation results from field observations. Once POMDEV scores and metropolis-hasting sampling on different model versions are effectuated, POMIC scores can be calculated. This method is still under development and further work are needed for the incorporation of multiple patterns assessment.
 }
 \details{
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 1.0.2\cr
-Date: \tab 2014-01-28\cr
+Version: \tab 1.0.3\cr
+Date: \tab 2016-05-20\cr
 License: \tab GPL-2\cr
 }
 The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. (2009) It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.

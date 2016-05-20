@@ -2,9 +2,9 @@ citHeader("To cite package Pomic in publications use:")
 
 citEntry(entry="Article",
          title = "Proposing an information criterion for individual-based models developed in a pattern-oriented modelling framework",
-         author = personList(person(first="Cyril", last="Piou"),
-			person(first="Uta", last="Berger"),
-			person(first="Volker", last="Grimm")),
+         author = personList(person(given="Cyril", family="Piou"),
+			person(given="Uta", family="Berger"),
+			person(given="Volker", family="Grimm")),
          journal = "Ecological modelling",
          year = "2009",
          volume = "220",

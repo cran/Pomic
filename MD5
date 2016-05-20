@@ -1,7 +1,7 @@
 94d55d512a9ba36caa9b7df079bae19f *COPYING
-647d3bf92dc2019a11b2f4edcb81903f *DESCRIPTION
-41fb0473ab6ddee806675c011bab2fb3 *NAMESPACE
-d05e5a8f54cfee3d206dc1a879a3d1a7 *NEWS
+0ad22c38160eeaa91f6375becbef519a *DESCRIPTION
+d2b8228b6964d2f111f8ce0be39ab19b *NAMESPACE
+1833f3d0c498230452b119bf3c24116d *NEWS
 93403ef5d43e42ee9c95c10d076ea4c6 *R/pomdev.corrected.r
 6912ece7b8b01990aa3bf4842fd24131 *R/pomdev.extra.R
 02ccc3a651f399c66571271cd2996170 *R/pomdev.r
@@ -9,8 +9,8 @@ d05e5a8f54cfee3d206dc1a879a3d1a7 *NEWS
 2e113a357521e55ba05ffb10196f3613 *demo/00Index
 478828eda24a0320995599219b2a6163 *demo/demoPomic.r
 c525069c46fa945dae4a9382dc218739 *demo/verification.r
-3ca10b09b6e5b93f449d8ef6519ef209 *inst/CITATION
-f76ef79eb7cb22ed623b8ce5833cbdf0 *man/Pomic-package.Rd
+dddc5e11566c2d0003c514487eea854b *inst/CITATION
+a8cf465fd84f5b955847a0119bf6cd7a *man/Pomic-package.Rd
 138a8f0e8a7464f1320d9c4f10dad9b1 *man/pomdev.corrected.rd
 ef3955cd9bb970a21557d48fde23a2be *man/pomdev.extra.Rd
 2ce667c2ce2776204c771a8deb6ab269 *man/pomdev.rd
