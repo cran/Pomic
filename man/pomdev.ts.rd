@@ -22,7 +22,7 @@ Return a value corresponding to the pomdev score of model results to reproduce t
 
 \author{ Cyril Piou 
 \cr
-\email{piou.cyril@yahoo.fr}
+\email{cyril.piou@cirad.fr}
 }
 
 \seealso{\code{\link{pomdev}} \code{\link{pomdev.extra}} \code{\link{pomdev.corrected}}}

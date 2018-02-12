@@ -36,7 +36,7 @@ Return a list containing:
 
 \author{ Cyril Piou 
 \cr
-\email{piou.cyril@yahoo.fr}
+\email{cyril.piou@cirad.fr}
 }
 
 \seealso{\code{\link{pomdev}} \code{\link{pomdev.corrected}}}

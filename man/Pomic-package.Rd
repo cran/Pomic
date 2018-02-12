@@ -6,14 +6,14 @@
 Pattern Oriented Modeling Information Criterion for ABM/IBM
 }
 \description{
-Calculations of an information criterion are proposed to check the quality of simulations results of ABM/IBM or other non-linear rule-based models. The POMDEV measure is based on the KL divergence and likelihood theory. It basically indicates the deviance of simulation results from field observations. Once POMDEV scores and metropolis-hasting sampling on different model versions are effectuated, POMIC scores can be calculated. This method is still under development and further work are needed for the incorporation of multiple patterns assessment.
+Calculations of an information criterion are proposed to check the quality of simulations results of Agent-based models (ABM/IBM) or other non-linear rule-based models. The POMDEV measure (Pattern Oriented Modelling DEViance) is based on the Kullback-Leibler divergence and likelihood theory. It basically indicates the deviance of simulation results from field observations. Once POMDEV scores and metropolis-hasting sampling on different model versions are effectuated, POMIC scores (Pattern Oriented Modelling Information Criterion) can be calculated. This method could be further developed to incorporate multiple patterns assessment.
 }
 \details{
 \tabular{ll}{
 Package: \tab Pomic\cr
 Type: \tab Package\cr
-Version: \tab 1.0.3\cr
-Date: \tab 2016-05-20\cr
+Version: \tab 1.0.4\cr
+Date: \tab 2018-02-09\cr
 License: \tab GPL-2\cr
 }
 The \link{pomdev} function is for distribution patterns. It is computed as in Piou et al. (2009) It corresponds to twice the sum of the log of an approximated likelihood given by the approximating function of density from the simulation results applied on the field data.
@@ -32,7 +32,7 @@ And type \code{demo{verification}} for the verification of the first demonstrati
 \author{
 Cyril Piou
 \cr
-\email{piou.cyril@yahoo.fr}
+\email{cyril.piou@cirad.fr}
 }
 \references{
 Piou 2007, Patterns and individual-based modeling of spatial competition within two main components of Neotropical mangrove ecosystems. PhD thesis, University of Bremen. \url{http://elib.suub.uni-bremen.de/diss/docs/00010671.pdf} 
